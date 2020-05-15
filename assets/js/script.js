@@ -23,6 +23,8 @@ function initAutocomplete() {
     mapTypeId: 'satellite'
   });
 
+  
+
 
 
   map.setTilt(45);
@@ -88,3 +90,5 @@ function initAutocomplete() {
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
   });
 }
+
+console.log("yo")
