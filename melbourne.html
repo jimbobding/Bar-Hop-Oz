@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+         type="text/css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous"
+         />
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://kit.fontawesome.com/53108b937c.js"
+         crossorigin="anonymous"
+         ></script>
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <script src="assets/js/script.js"></script>
+      <title>Bar Hop UK</title>
+   </head>
+   <body>
+      <!------------------------Navbar----------------------------->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+         <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+         <i class="fas fa-beer"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <a href="index.html">
+               <div class="logo">
+                  <div id="BarHop-logo">
+                     <img
+                        src="assets/images/Bar Hop UK logo.png"
+                        class="logo bar-hop-logo"
+                        alt="Bar-Hop-UK"
+                        />
+                  </div>
+               </div
+                  >
+            </a>
+            <ul class="navbar-nav ml-auto nav-list">
+               <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                     >Home</a
+                     >
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#about">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#nearyou">Breweries near you</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#cities">Cities</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#newsletter">Newsletter</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#about">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#BarHopUk">Bar Hop UK</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container directions-container">
+         <div class="row">
+            <div class="col">
+               <h2 class="city-map-heading">Melbourne</h2>
+               <p>
+                  Using the brewery locater panel choose from the list of breweries which you would like to visit. Choose brewery from which you would
+                  like to start from a brewery you would like to finish your journey on
+                  and as many as you would like in between.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col">
+               <div id="map"></div>
+               <div id="right-panel">
+                  <div>
+                     <b>Starting-Brewery:</b>
+                     <select id="start">
+                        <option value="5WQP+3M Docklands, Victoria, Australia"
+                           >Urban Alley Brewery</option
+                           >
+                        <option value="89 Bertie St, Port Melbourne VIC 3207, Australia"
+                           >Colonial Brewing Co</option
+                           >
+                        <option value="6/107-109 Whitehall St, Footscray VIC 3011, Australia"
+                           >Hop Nation Brewing Co.</option
+                           >
+                        <option value="130 Barkly St, Brunswick VIC 3056, Australia"
+                           >Thunder Road Brewery</option
+                           >
+                        <option value="122 Weston St, Brunswick East VIC 3057, Australia"
+                           >Temple Brewing Company</option
+                           >
+                        <option value="36 Alfred St, South Melbourne VIC 3205, Australia"
+                           >Westside Ale Works</option
+                           >
+                        <option
+                           value="414 Smith St, Collingwood VIC 3066, Australia"
+                           >Fixation Brewing Co - the incubator</option
+                           >
+                        <option
+                           value="136 Hall St, Spotswood VIC 3015, Australia"
+                           >Two Birds Brewing</option
+                           >
+                        <option value="80 North St, Richmond VIC 3121, Australia"
+                           >Mountain Goat Beer</option
+                           >
+                        <option value="86 Parsons St, Kensington VIC 3031, Australia"
+                           >Bonehead Brewing
+                        </option>
+                        <option value="36 Alfred St, South Melbourne VIC 3205, Australia"
+                           >Westside Ale Works</option
+                           >
+                        <option value="245 Johnston St, Abbotsford VIC 3067, Australia"
+                           >Bodriggy Brewing Company</option
+                           >
+                        <option
+                           value="100 Gipps St, Collingwood VIC 3066, Australia"
+                           >Stomping Ground Brewery & Online Store</option
+                           >
+                        <option
+                           value="40 Sackville St, Collingwood VIC 3066, Australia"
+                           >The Mill Brewery</option
+                           >
+                        <option value="34 MacBeth St, Braeside VIC 3195, Australia"
+                           >Boatrocker Brewers & Distillers - Barrel Room</option
+                           >
+                        <option
+                           value="648 Bridge Rd, Richmond VIC 3121, Australia"
+                           >Burnley Brewing</option
+                           >
+                        <option value="279 Wellington St, Collingwood VIC 3066, Australia"
+                           >CMolly Rose Brewery
+                        </option>
+                        <option
+                           value="4 Joyner St, Moorabbin VIC 3189, Australia"
+                           >2 Brothers Brewery</option
+                           >
+                        <option
+                           value="17 Duke St, Abbotsford VIC 3067, Australia"
+                           >Moon Dog OG</option
+                           >
+                           <option
+                           value="454 St Kilda Rd, Melbourne VIC 3004, Australia"
+                           >VineFinders</option
+                           >
+                           <option
+                           value="5/17 Doveton Ave, Eumemmerring VIC 3177, Australia"
+                           >Brownstone Micro Brewery</option
+                           >
+                           <option
+                           value="12/102 Henkel St, Brunswick VIC 3056, Australia"
+                           >The Foreigner Brewing Company</option
+                           >
+                     </select>
+                     <br />
+                     <b>Waypoint-point breweries:</b> <br />
+                     <i>(Ctrl+Click or Cmd+Click for multiple selection)</i> <br />
+                     <select multiple id="waypoints">
+                             <option value="5WQP+3M Docklands, Victoria, Australia"
+                           >Urban Alley Brewery</option
+                           >
+                        <option value="89 Bertie St, Port Melbourne VIC 3207, Australia"
+                           >Colonial Brewing Co</option
+                           >
+                        <option value="6/107-109 Whitehall St, Footscray VIC 3011, Australia"
+                           >Hop Nation Brewing Co.</option
+                           >
+                        <option value="130 Barkly St, Brunswick VIC 3056, Australia"
+                           >Thunder Road Brewery</option
+                           >
+                        <option value="122 Weston St, Brunswick East VIC 3057, Australia"
+                           >Temple Brewing Company</option
+                           >
+                        <option value="36 Alfred St, South Melbourne VIC 3205, Australia"
+                           >Westside Ale Works</option
+                           >
+                        <option
+                           value="414 Smith St, Collingwood VIC 3066, Australia"
+                           >Fixation Brewing Co - the incubator</option
+                           >
+                        <option
+                           value="136 Hall St, Spotswood VIC 3015, Australia"
+                           >Two Birds Brewing</option
+                           >
+                        <option value="80 North St, Richmond VIC 3121, Australia"
+                           >Mountain Goat Beer</option
+                           >
+                        <option value="86 Parsons St, Kensington VIC 3031, Australia"
+                           >Bonehead Brewing
+                        </option>
+                        <option value="36 Alfred St, South Melbourne VIC 3205, Australia"
+                           >Westside Ale Works</option
+                           >
+                        <option value="245 Johnston St, Abbotsford VIC 3067, Australia"
+                           >Bodriggy Brewing Company</option
+                           >
+                        <option
+                           value="100 Gipps St, Collingwood VIC 3066, Australia"
+                           >Stomping Ground Brewery & Online Store</option
+                           >
+                        <option
+                           value="40 Sackville St, Collingwood VIC 3066, Australia"
+                           >The Mill Brewery</option
+                           >
+                        <option value="34 MacBeth St, Braeside VIC 3195, Australia"
+                           >Boatrocker Brewers & Distillers - Barrel Room</option
+                           >
+                        <option
+                           value="648 Bridge Rd, Richmond VIC 3121, Australia"
+                           >Burnley Brewing</option
+                           >
+                        <option value="279 Wellington St, Collingwood VIC 3066, Australia"
+                           >CMolly Rose Brewery
+                        </option>
+                        <option
+                           value="4 Joyner St, Moorabbin VIC 3189, Australia"
+                           >2 Brothers Brewery</option
+                           >
+                        <option
+                           value="17 Duke St, Abbotsford VIC 3067, Australia"
+                           >Moon Dog OG</option
+                           >
+                           <option
+                           value="454 St Kilda Rd, Melbourne VIC 3004, Australia"
+                           >VineFinders</option
+                           >
+                           <option
+                           value="5/17 Doveton Ave, Eumemmerring VIC 3177, Australia"
+                           >Brownstone Micro Brewery</option
+                           >
+                           <option
+                           value="12/102 Henkel St, Brunswick VIC 3056, Australia"
+                           >The Foreigner Brewing Company</option
+                           >
+                     </select>
+                     <br />
+                     <b>Finishing-brewery:</b>
+                     <select id="end">
+                            <option value="5WQP+3M Docklands, Victoria, Australia"
+                           >Urban Alley Brewery</option
+                           >
+                        <option value="89 Bertie St, Port Melbourne VIC 3207, Australia"
+                           >Colonial Brewing Co</option
+                           >
+                        <option value="6/107-109 Whitehall St, Footscray VIC 3011, Australia"
+                           >Hop Nation Brewing Co.</option
+                           >
+                        <option value="130 Barkly St, Brunswick VIC 3056, Australia"
+                           >Thunder Road Brewery</option
+                           >
+                        <option value="122 Weston St, Brunswick East VIC 3057, Australia"
+                           >Temple Brewing Company</option
+                           >
+                        <option value="36 Alfred St, South Melbourne VIC 3205, Australia"
+                           >Westside Ale Works</option
+                           >
+                        <option
+                           value="414 Smith St, Collingwood VIC 3066, Australia"
+                           >Fixation Brewing Co - the incubator</option
+                           >
+                        <option
+                           value="136 Hall St, Spotswood VIC 3015, Australia"
+                           >Two Birds Brewing</option
+                           >
+                        <option value="80 North St, Richmond VIC 3121, Australia"
+                           >Mountain Goat Beer</option
+                           >
+                        <option value="86 Parsons St, Kensington VIC 3031, Australia"
+                           >Bonehead Brewing
+                        </option>
+                        <option value="36 Alfred St, South Melbourne VIC 3205, Australia"
+                           >Westside Ale Works</option
+                           >
+                        <option value="245 Johnston St, Abbotsford VIC 3067, Australia"
+                           >Bodriggy Brewing Company</option
+                           >
+                        <option
+                           value="100 Gipps St, Collingwood VIC 3066, Australia"
+                           >Stomping Ground Brewery & Online Store</option
+                           >
+                        <option
+                           value="40 Sackville St, Collingwood VIC 3066, Australia"
+                           >The Mill Brewery</option
+                           >
+                        <option value="34 MacBeth St, Braeside VIC 3195, Australia"
+                           >Boatrocker Brewers & Distillers - Barrel Room</option
+                           >
+                        <option
+                           value="648 Bridge Rd, Richmond VIC 3121, Australia"
+                           >Burnley Brewing</option
+                           >
+                        <option value="279 Wellington St, Collingwood VIC 3066, Australia"
+                           >CMolly Rose Brewery
+                        </option>
+                        <option
+                           value="4 Joyner St, Moorabbin VIC 3189, Australia"
+                           >2 Brothers Brewery</option
+                           >
+                        <option
+                           value="17 Duke St, Abbotsford VIC 3067, Australia"
+                           >Moon Dog OG</option
+                           >
+                           <option
+                           value="454 St Kilda Rd, Melbourne VIC 3004, Australia"
+                           >VineFinders</option
+                           >
+                           <option
+                           value="5/17 Doveton Ave, Eumemmerring VIC 3177, Australia"
+                           >Brownstone Micro Brewery</option
+                           >
+                           <option
+                           value="12/102 Henkel St, Brunswick VIC 3056, Australia"
+                           >The Foreigner Brewing Company</option
+                           >
+                     </select>
+                     <br />
+                     <input type="submit" id="submit" />
+                  </div>
+                  <div id="directions-panel"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script
+         src="https://code.jquery.com/jquery-3.5.0.js"
+         integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+         crossorigin="anonymous"
+         ></script>
+      <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+      <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEHs3x97gngwVn1vWAHuRHfYbZVf0scUs&libraries=places&callback=initAutocomplete"
+         async
+         defer
+         ></script>
+   </body>
+</html>
